@@ -1,0 +1,98 @@
+/*Impostazioni di default*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+
+/*Dato vh a body per evitare che in altre piattaforme ci siano spazi vuoti*/
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+}    
+
+/*Stabilito larghezza di "container" e centrato orizzontalmente rispetto all'elemento padre, "body"*/
+
+.container {
+    width: 60%;
+    background: rgb(0, 0, 0, 0.6);
+    margin: auto;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+/*Centrato orizzontalmente le sezioni rispetto a "container", padre*/
+
+section {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*Centrato orizzontalmente logo e titolo rispetto alla sezione stessa*/
+
+header {
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*Altezza logo*/
+
+header>img {
+    height: 70px;
+}
+
+h1 {
+    color: rgb(13, 201, 13);
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Centrato gli input*/
+
+header > div {
+    background-color: rgb(13, 201, 13);
+    text-align: center;
+    padding:10px
+}
+
+h3 {
+    color: white;
+    font-size: 14px;
+}
+
+/*Selettore per tutti i "p" e tutti i "div" figli di "section"*/
+
+p, section > div {
+    font-size: 10px;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: 15px;
+}
+
+/*Indicatori livello delle batterie*/
+
+.level {
+    border-radius: 5px;
+    height: 25px;
+}
+
+.battery1 {
+    background-color: rgb(248, 165, 11);
+    width: 40%;
+}
+
+.battery2 {
+    background-color: rgb(13, 201, 13);
+    width: 70%;
+}
+
+.battery3 {
+    background-color: rgb(199, 60, 10);
+    width: 20%;
+}
